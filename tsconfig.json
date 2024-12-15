@@ -1,0 +1,98 @@
+{
+  "compilerOptions": {
+      /* Truy cập https://aka.ms/tsconfig để đọc thêm về tệp này */
+      /* Dự án */
+      // "incremental": true,                              /* Lưu các tệp .tsbuildinfo để cho phép biên dịch gia tăng các dự án. */
+      // "composite": true,                                /* Bật các ràng buộc để cho phép một dự án TypeScript được sử dụng với tham chiếu dự án. */
+      // "tsBuildInfoFile": "./.tsbuildinfo",              /* Chỉ định đường dẫn đến tệp .tsbuildinfo để biên dịch gia tăng. */
+      // "disableSourceOfProjectReferenceRedirect": true,  /* Vô hiệu hóa ưu tiên tệp nguồn thay vì tệp khai báo khi tham chiếu dự án composite. */
+      // "disableSolutionSearching": true,                 /* Loại bỏ kiểm tra tham chiếu nhiều dự án khi chỉnh sửa. */
+      // "disableReferencedProjectLoad": true,             /* Giảm số lượng dự án được tải tự động bởi TypeScript. */
+      /* Ngôn ngữ và môi trường */
+      "target": "ESNext",                                  /* Đặt phiên bản JavaScript được tạo ra và bao gồm các khai báo thư viện tương thích. */
+      "lib": ["ESNext"],                                   /* Chỉ định tập hợp các tệp khai báo thư viện đi kèm mô tả môi trường runtime mục tiêu. */
+      // "jsx": "preserve",                                /* Chỉ định mã JSX nào được tạo ra. */
+      // "experimentalDecorators": true,                   /* Bật hỗ trợ thử nghiệm cho các decorator thử nghiệm cũ. */
+      // "emitDecoratorMetadata": true,                    /* Xuất metadata kiểu thiết kế cho các khai báo được trang trí trong tệp nguồn. */
+      // "jsxFactory": "",                                 /* Chỉ định hàm JSX factory được sử dụng khi nhắm đến JSX React, ví dụ: 'React.createElement' hoặc 'h'. */
+      // "jsxFragmentFactory": "",                         /* Chỉ định tham chiếu JSX Fragment được sử dụng cho các fragment khi nhắm đến JSX React, ví dụ: 'React.Fragment'. */
+      // "jsxImportSource": "",                            /* Chỉ định module specifier được sử dụng để import các hàm JSX factory khi sử dụng 'jsx: react-jsx*'. */
+      // "reactNamespace": "",                             /* Chỉ định đối tượng được gọi cho 'createElement'. Chỉ áp dụng khi nhắm đến JSX React. */
+      // "noLib": true,                                    /* Vô hiệu hóa việc bao gồm bất kỳ tệp thư viện nào, bao gồm cả lib.d.ts mặc định. */
+      // "useDefineForClassFields": true,                  /* Xuất các trường lớp tuân thủ tiêu chuẩn ECMAScript. */
+      // "moduleDetection": "auto",                        /* Điều khiển phương pháp được sử dụng để phát hiện các tệp JS dạng module. */
+      /* Module */
+      "module": "ESNext",                                  /* Chỉ định mã module nào được tạo ra. */
+      // "rootDir": "./",                                  /* Chỉ định thư mục gốc trong các tệp nguồn của bạn. */
+      "moduleResolution": "node",                          /* Chỉ định cách TypeScript tìm tệp từ một module specifier đã cho. */
+      // "baseUrl": "./",                                  /* Chỉ định thư mục cơ sở để giải quyết các tên module không tương đối. */
+      // "paths": {},                                      /* Chỉ định một tập hợp các mục nhập ánh xạ import đến các vị trí tra cứu bổ sung. */
+      // "rootDirs": [],                                   /* Cho phép nhiều thư mục được xem như một khi giải quyết các module. */
+      // "typeRoots": [],                                  /* Chỉ định nhiều thư mục hoạt động như './node_modules/@types'. */
+      // "types": [],                                      /* Chỉ định các tên package kiểu cần được bao gồm mà không cần tham chiếu trong tệp nguồn. */
+      // "allowUmdGlobalAccess": true,                     /* Cho phép truy cập các UMD globals từ các module. */
+      // "moduleSuffixes": [],                             /* Danh sách hậu tố tên tệp để tìm kiếm khi giải quyết một module. */
+      "allowImportingTsExtensions": true,                  /* Cho phép import bao gồm các phần mở rộng tệp TypeScript. Yêu cầu '--moduleResolution bundler' và '--noEmit' hoặc '--emitDeclarationOnly'. */
+      "allowSyntheticDefaultImports": true,                /* Cho phép import các mô-đun mặc định mà không cần các mô-đun mặc định. */
+      // "resolvePackageJsonExports": true,                /* Sử dụng trường 'exports' trong package.json khi giải quyết các import từ package. */
+      // "resolvePackageJsonImports": true,                /* Sử dụng trường 'imports' trong package.json khi giải quyết các import. */
+      // "customConditions": [],                           /* Các điều kiện được thiết lập bổ sung vào các mặc định cụ thể của trình giải quyết khi giải quyết import. */
+      "resolveJsonModule": true,                           /* Bật tính năng import các tệp .json. */
+      // "allowArbitraryExtensions": true,                 /* Cho phép import các tệp với bất kỳ phần mở rộng nào, miễn là có tệp khai báo. */
+      // "noResolve": true,                                /* Không cho phép 'import', 'require' hoặc '<reference>' mở rộng số lượng tệp TypeScript thêm vào dự án. */
+      /* Hỗ trợ JavaScript */
+      // "allowJs": true,                                  /* Cho phép các tệp JavaScript là một phần của chương trình của bạn. Sử dụng tùy chọn 'checkJS' để nhận lỗi từ các tệp này. */
+      // "checkJs": true,                                  /* Bật báo cáo lỗi trong các tệp JavaScript được kiểm tra kiểu. */
+      // "maxNodeModuleJsDepth": 1,                        /* Chỉ định độ sâu thư mục tối đa được sử dụng để kiểm tra các tệp JavaScript từ 'node_modules'. Chỉ áp dụng khi 'allowJs'. */
+      /* Xuất */
+      "declaration": true,                                 /* Tạo các tệp .d.ts từ các tệp TypeScript và JavaScript trong dự án của bạn. */
+      // "declarationMap": true,                           /* Tạo sourcemap cho các tệp d.ts. */
+      "emitDeclarationOnly": true,                         /* Chỉ xuất các tệp d.ts và không xuất tệp JavaScript. */
+      // "sourceMap": true,                                /* Tạo các tệp sourcemap cho các tệp JavaScript được xuất. */
+      // "inlineSourceMap": true,                          /* Bao gồm các tệp sourcemap bên trong JavaScript được xuất. */
+      // "outFile": "./",                                  /* Chỉ định một tệp gộp tất cả các đầu ra thành một tệp JavaScript. Nếu 'declaration' là true, cũng chỉ định một tệp gộp tất cả đầu ra d.ts. */
+      // "outDir": "./",                                   /* Chỉ định thư mục đầu ra cho tất cả các tệp được xuất. */
+      // "removeComments": true,                           /* Vô hiệu hóa việc xuất các chú thích. */
+      // "noEmit": true,                                   /* Vô hiệu hóa việc xuất tệp từ một lần biên dịch. */
+      // "importHelpers": true,                            /* Cho phép import các hàm trợ giúp từ tslib một lần cho mỗi dự án, thay vì bao gồm chúng cho mỗi tệp. */
+      // "importsNotUsedAsValues": "remove",               /* Chỉ định hành vi xuất/kiểm tra cho các import chỉ được sử dụng cho kiểu. */
+      // "downlevelIteration": true,                       /* Xuất JavaScript tuân thủ tốt hơn nhưng verbose và kém hiệu năng hơn cho iteration. */
+      // "sourceRoot": "",                                 /* Chỉ định đường dẫn gốc để debugger tìm mã nguồn tham chiếu. */
+      // "mapRoot": "",                                    /* Chỉ định vị trí debugger nên tìm tệp map thay vì vị trí được tạo. */
+      // "inlineSources": true,                            /* Bao gồm mã nguồn trong các sourcemap bên trong JavaScript được xuất. */
+      // "emitBOM": true,                                  /* Xuất một Byte Order Mark (BOM) UTF-8 ở đầu các tệp đầu ra. */
+      // "newLine": "crlf",                                /* Đặt ký tự xuống dòng cho các tệp được xuất. */
+      // "stripInternal": true,                            /* Vô hiệu hóa việc xuất các khai báo có '@internal' trong các chú thích JSDoc. */
+      // "noEmitHelpers": true,                            /* Vô hiệu hóa việc tạo các hàm trợ giúp tùy chỉnh như '__extends' trong đầu ra biên dịch. */
+      // "noEmitOnError": true,                            /* Vô hiệu hóa việc xuất tệp nếu bất kỳ lỗi kiểm tra kiểu nào được báo cáo. */
+      // "preserveConstEnums": true,                       /* Vô hiệu hóa việc xóa các khai báo 'const enum' trong mã được tạo. */
+      // "declarationDir": "./",                           /* Chỉ định thư mục đầu ra cho các tệp khai báo được tạo. */
+      // "preserveValueImports": true,                     /* Bảo toàn các giá trị import không sử dụng trong đầu ra JavaScript, điều này sẽ bị loại bỏ. */
+      /* Ràng buộc tương tác */
+      // "isolatedModules": true,                          /* Đảm bảo mỗi tệp có thể được biên dịch an toàn mà không dựa vào các import khác. */
+      // "verbatimModuleSyntax": true,                     /* Không biến đổi hoặc loại bỏ bất kỳ import/export nào không được đánh dấu chỉ sử dụng kiểu. */
+      /* Lựa chọn kiểm tra */
+      "strict": false,                                      /* Kích hoạt tất cả các kiểm tra kiểu nghiêm ngặt. */
+      // "noImplicitAny": true,                            /* Đặt lỗi khi biểu thức kiểu 'any' ngụ ý không được xác định kiểu rõ ràng. */
+      // "strictNullChecks": true,                         /* Vô hiệu hóa các lỗi khi giá trị 'null' hoặc 'undefined' có thể được gán cho một kiểu không có giá trị đó. */
+      // "strictFunctionTypes": true,                      /* Đặt lỗi trong kiểu đối số chức năng không thể gọi nhau dễ dàng hơn. */
+      // "strictBindCallApply": true,                      /* Đặt lỗi khi đối số không phù hợp được truyền đến 'bind', 'call', và 'apply'. */
+      // "strictPropertyInitialization": true,             /* Đặt lỗi khi các thuộc tính cụ thể không được gán một giá trị trong trình khởi tạo lớp. */
+      // "noImplicitThis": true,                           /* Đặt lỗi khi 'this' có kiểu ngụ ý 'any'. */
+      // "useUnknownInCatchVariables": true,               /* Đặt kiểu mặc định của các biến catch là 'unknown' thay vì 'any'. */
+      // "alwaysStrict": true,                             /* Bật chế độ nghiêm ngặt (chỉ thị 'use strict') cho mỗi tệp đầu ra JavaScript. */
+      // "noUnusedLocals": true,                           /* Đặt lỗi khi các biến cục bộ được khai báo nhưng không bao giờ được sử dụng. */
+      // "noUnusedParameters": true,                       /* Đặt lỗi khi các tham số được khai báo nhưng không bao giờ được sử dụng. */
+      // "exactOptionalPropertyTypes": true,               /* Tạo các kiểu thuộc tính tùy chọn một cách chặt chẽ hơn. */
+      // "noImplicitReturns": true,                        /* Đặt lỗi khi không có giá trị nào được trả về từ một số nhánh của một hàm. */
+      // "noFallthroughCasesInSwitch": true,               /* Đặt lỗi khi một trường hợp không có biểu thức kết thúc. */
+      // "noUncheckedIndexedAccess": true,                 /* Lấy kiểu chỉ mục bao gồm 'undefined' mà không kiểm tra sự tồn tại. */
+      // "noImplicitOverride": true,                       /* Đặt lỗi khi một phương thức của lớp con ghi đè một phương thức của lớp cha mà không có từ khóa 'override'. */
+      // "noPropertyAccessFromIndexSignature": true,       /* Đặt lỗi khi một giá trị chỉ mục được truy cập bằng cách sử dụng cú pháp truy cập thuộc tính. */
+      // "allowUnusedLabels": true,                        /* Đặt lỗi khi tìm thấy một nhãn không được sử dụng. */
+      // "allowUnreachableCode": true,                     /* Đặt lỗi khi một khối mã không thể đạt được được tìm thấy. */
+      /* Khác */
+      // "skipDefaultLibCheck": true,                      /* Bỏ qua kiểm tra các tệp khai báo của TypeScript. */
+      "skipLibCheck": true                                 /* Bỏ qua kiểm tra các tệp khai báo. */
+  }
+}
